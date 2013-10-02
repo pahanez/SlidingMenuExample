@@ -2,7 +2,10 @@ package com.example.slidingmenutemplate;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -48,7 +51,8 @@ public class MainActivity extends FragmentActivity {
 				.replace(R.id.menu_frame_two, new SampleListFragment())
 				.commit();
 		mSlidingMenuLeft.setSecondaryShadowDrawable(R.drawable.shadow);
-
+		
+		
 	}
 
 	@Override
